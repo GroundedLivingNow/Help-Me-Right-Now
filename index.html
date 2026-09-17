@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25324a">
+  <meta name="description" content="Simple next steps for bills, appointments, work, paperwork, mistakes, conflict, and overwhelm.">
+  <title>What Do I Do First? | Almost Adult</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#top"><span class="mark">AA</span><span><strong>Almost Adult</strong><small>by Grounded Living Now</small></span></a>
+    <button class="ghost" id="resetAll" type="button">Reset progress</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">A real-life navigator</p>
+      <h1>What do I do first?</h1>
+      <p class="lead">Pick what is happening. You’ll get the first move, what to say, and a short plan—without being expected to already know how any of this works.</p>
+    </section>
+
+    <section class="chooser panel" aria-labelledby="choose-title">
+      <div class="heading"><span>01</span><div><p class="eyebrow">Choose your situation</p><h2 id="choose-title">What feels stuck right now?</h2></div></div>
+      <div class="situation-grid" id="situationGrid">
+        <button type="button" data-topic="bill"><span>Bill</span><strong>A bill is due or late</strong></button>
+        <button type="button" data-topic="appointment"><span>Appointment</span><strong>I need to make a call</strong></button>
+        <button type="button" data-topic="work"><span>Work</span><strong>There’s a job or schedule problem</strong></button>
+        <button type="button" data-topic="paperwork"><span>Paperwork</span><strong>I don’t understand this form</strong></button>
+        <button type="button" data-topic="mistake"><span>Mistake</span><strong>I messed something up</strong></button>
+        <button type="button" data-topic="conflict"><span>Conflict</span><strong>I need to handle a hard conversation</strong></button>
+        <button type="button" data-topic="overwhelm"><span>Overwhelm</span><strong>Everything feels like too much</strong></button>
+      </div>
+    </section>
+
+    <section class="plan panel" id="plan" hidden aria-live="polite">
+      <div class="heading"><span>02</span><div><p class="eyebrow">Your next-step plan</p><h2 id="planTitle"></h2></div></div>
+      <div class="first-move"><p>Do this first</p><strong id="firstMove"></strong></div>
+      <div class="say-box"><p>Words you can borrow</p><blockquote id="words"></blockquote><button class="copy" id="copyWords" type="button">Copy these words</button></div>
+      <div class="progress"><span id="progressText">0 of 0 complete</span><div><i id="progressBar"></i></div></div>
+      <ol class="checklist" id="checklist"></ol>
+      <div class="help-box"><strong>Ask for help when:</strong> <span id="helpWhen"></span></div>
+    </section>
+
+    <section class="pause panel">
+      <div><p class="eyebrow">Emergency pause button</p><h2>Too overwhelmed to choose?</h2><p>Put both feet on the floor. Name five things you see. Drink water. Then choose only the thing with the closest deadline.</p></div>
+      <button class="primary" id="oneMinute" type="button">Start a 1-minute reset</button>
+      <span class="countdown" id="countdown" aria-live="polite">1:00</span>
+    </section>
+  </main>
+
+  <footer><strong>Almost Adult · Grounded Living Now</strong><p>General education only. For emergencies or immediate danger, contact local emergency services or a trusted adult.</p></footer>
+</body>
+</html>
