@@ -1,15 +1,14 @@
-# Almost Adult: What Do I Do First?
+# Help Me Right Now
 
-A free real-life navigator from Grounded Living Now.
+A free, mobile-friendly Grounded Living Now tool for moments when everything feels stuck or overwhelming.
 
-## Files
+Visitors choose what is happening and receive:
 
-- `index.html` — app content
-- `styles.css` — visual design and phone layout
-- `script.js` — guided plans, copied scripts, saved checklists, and reset timer
+- one clear first move
+- words they can borrow
+- a short saved checklist
+- a one-minute reset timer
 
-## Publish with GitHub Pages
+## GitHub Pages
 
-Upload all four files to the root of a GitHub repository. In **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
-
-Progress stays only in the visitor's browser. The app does not collect personal information.
+Publish from the `main` branch and `/ (root)` folder. The app is entirely static and does not collect personal information. Checklist progress stays only in the visitor's browser.
